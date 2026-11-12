@@ -11,7 +11,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String getGreeting() {
-        return "Welcome to the Cloud Native Book Catalog!";
+        return "Hello World! Welcome to the Cloud Native Book Catalog!";
     }
 
     @GetMapping("/greeting/{name}")
@@ -23,6 +23,6 @@ public class HomeController {
     public String health() throws UnknownHostException {
         String hostname = InetAddress.getLocalHost().getHostName();
         return "Application is healthy and running on: " + hostname +
-               " (" + System.getProperty("os.name") + ")";
+                " (" + System.getProperty("os.name") + ")";
     }
 }
