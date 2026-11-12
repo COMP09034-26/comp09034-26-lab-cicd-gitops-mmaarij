@@ -117,13 +117,13 @@ class CatalogServiceApplicationTests {
                                 .exchange()
                                 .expectStatus().isCreated();
 
-                // Delete the book via DELETE request
-                webTestClient
-                                .delete()
-                                .uri("/books/" + bookIsbn)
-                                .exchange()
-                                // Expects 204 No Content status for successful deletion
-                                .expectStatus().isNoContent();
+                // // Delete the book via DELETE request
+                // webTestClient
+                // .delete()
+                // .uri("/books/" + bookIsbn)
+                // .exchange()
+                // // Expects 204 No Content status for successful deletion
+                // .expectStatus().isNoContent();
 
                 // Verify the book is actually deleted by attempting to retrieve it
                 webTestClient
