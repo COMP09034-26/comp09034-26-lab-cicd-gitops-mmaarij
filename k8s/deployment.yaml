@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: catalog-service
-        image: docker pull ghcr.io/comp09034-26/comp09034-26-lab-cicd-gitops-mmaarij:latest
+        image: ghcr.io/comp09034-26/comp09034-26-lab-cicd-gitops-mmaarij:latest
         ports:
         - containerPort: 9001
       imagePullSecrets:
