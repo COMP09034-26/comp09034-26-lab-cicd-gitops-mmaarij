@@ -10,8 +10,8 @@ import java.net.UnknownHostException;
 public class HomeController {
 
     @GetMapping("/")
-    public String getGreeting() {
-        return "Hello World! Welcome to the Cloud Native Book Catalog!";
+    public String greeting() {
+        return "Welcome to the Catalog Service - GitOps Edition";
     }
 
     @GetMapping("/greeting/{name}")
